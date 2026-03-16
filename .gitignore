@@ -51,6 +51,9 @@ android/
 *.jks
 *.keystore
 
+# Private deployment doc (contains secrets)
+DEPLOY.md
+
 # Misc
 .vercel
 *.tsbuildinfo
