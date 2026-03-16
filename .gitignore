@@ -57,3 +57,6 @@ DEPLOY.md
 # Misc
 .vercel
 *.tsbuildinfo
+
+.vercel
+.env*.local

@@ -29,7 +29,11 @@
       "Bash(find \"c:\\\\Users\\\\Gunjan\\\\Documents\\\\Business_Apps\\\\AI_Planner\\\\apps\\\\web\\\\src\\\\app\\\\\\(app\\)\" -type f -name \"*.tsx\")",
       "Bash(firebase apphosting:backends --help)",
       "Bash(firebase experiments)",
-      "Bash(firebase help)"
+      "Bash(firebase help)",
+      "Bash(gh auth status)",
+      "Bash(firebase apphosting:secrets:set google-client-id --project vibe-planner-3ffc6 --data-file -)",
+      "Bash(npx vercel)",
+      "Bash(npx vercel login)"
     ],
     "additionalDirectories": [
       "C:\\Users\\Gunjan\\.claude\\projects\\c--Users-Gunjan-Documents-Business-Apps-AI-Planner",
