@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "Firebase.vscode-firebase-explorer",
+    "msjsdiag.vscode-react-native",
+    "ms-vscode.vscode-typescript-next",
+    "Prisma.prisma",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

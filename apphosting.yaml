@@ -1,0 +1,72 @@
+runConfig:
+  concurrency: 80
+  minInstances: 0
+  maxInstances: 10
+
+env:
+  # ── Public Firebase config (safe to expose) ──────────────────────────────
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyDGvrJ8YG5iT4AQ1CuUXGac56wSUiS6UGU
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: vibe-planner-3ffc6.firebaseapp.com
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: vibe-planner-3ffc6
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: vibe-planner-3ffc6.firebasestorage.app
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "102372875479"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:102372875479:web:ee1a4c11b8e58ff77ca492
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_RAZORPAY_KEY_ID
+    value: rzp_test_SRneftnGzpexen
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # ── App URL — update after first deploy ──────────────────────────────────
+  - variable: NEXT_PUBLIC_APP_URL
+    value: https://vibe-planner-3ffc6.web.app
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # ── Server-side secrets (stored in Secret Manager) ───────────────────────
+  - variable: GOOGLE_CLIENT_ID
+    secret: google-client-id
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: GOOGLE_CLIENT_SECRET
+    secret: google-client-secret
+    availability:
+      - RUNTIME
+
+  - variable: GROQ_API_KEY
+    secret: groq-api-key
+    availability:
+      - RUNTIME
