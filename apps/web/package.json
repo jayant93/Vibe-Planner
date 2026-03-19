@@ -20,7 +20,7 @@
     "firebase": "^10.12.0",
     "googleapis": "^140.0.1",
     "lucide-react": "^0.400.0",
-    "next": "14.2.5",
+    "next": "^14.2.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "shared": "*",
