@@ -86,7 +86,7 @@ export function AIHelperView() {
       setQueue((q) => {
         if (q.length === 0) return q;
         const [head, ...tail] = q;
-        next.push(head);
+        if (head) next.push(head);
         return tail;
       });
       return next;
