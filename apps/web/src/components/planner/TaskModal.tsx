@@ -6,7 +6,7 @@ import { taskRef, tasksRef } from '@/lib/firebase';
 import { usePlannerStore } from '@/lib/store';
 import { toast } from 'sonner';
 import { X, Trash2 } from 'lucide-react';
-import type { Task, RecurrenceEndType, LifeCategory } from 'shared/types';
+import type { Task, LifeCategory } from 'shared/types';
 
 interface TaskModalProps {
   task: Partial<Task>;

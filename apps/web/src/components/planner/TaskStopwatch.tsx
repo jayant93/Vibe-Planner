@@ -58,7 +58,7 @@ export function TaskStopwatch({ task }: TaskStopwatchProps) {
       toast.warning(`"${activeTimer.taskTitle}" timer is already running`);
       return;
     }
-    startTimer({ taskId: task.id, taskTitle: task.title, startedAt: Date.now(), category: task.category });
+    startTimer({ taskId: task.id, taskTitle: task.title, startedAt: Date.now(), ...(task.category ? { category: task.category } : {}) });
     setElapsed(0);
   }
 

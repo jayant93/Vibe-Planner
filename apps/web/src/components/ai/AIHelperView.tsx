@@ -165,7 +165,7 @@ export function AIHelperView() {
     setVisible((prev) =>
       prev.map((d) =>
         d.selected
-          ? { ...d, startTime: bulkStartTime, endTime: bulkEndTime || undefined }
+          ? { ...d, startTime: bulkStartTime, ...(bulkEndTime ? { endTime: bulkEndTime } : {}) }
           : d
       )
     );
