@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["npm install --prefix apps/web"]
+
+[phases.build]
+cmds = ["npm run build --prefix apps/web"]
+
+[start]
+cmd = "npm start --prefix apps/web"

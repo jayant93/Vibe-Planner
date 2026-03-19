@@ -4,7 +4,7 @@ import './globals.css';
 import { AuthProvider } from '@/components/ui/AuthProvider';
 import { Toaster } from 'sonner';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], preload: false });
 
 export const metadata: Metadata = {
   title: {
